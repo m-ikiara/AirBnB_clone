@@ -1,6 +1,6 @@
 # AirBnB Clone
 
-![Optional Text](hbnb.png)
+![HBnB](hbnb.png)
 
 ## General Idea
 
