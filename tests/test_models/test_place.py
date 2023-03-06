@@ -4,9 +4,7 @@ from models import *
 
 
 class Test_PlaceModel(unittest.TestCase):
-    """
-    Test the place model class
-    """
+    """Test the place model class."""
 
     def setUp(self):
         self.model = Place()
