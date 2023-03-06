@@ -4,9 +4,7 @@ from models import *
 
 
 class Test_AmenityModel(unittest.TestCase):
-    """
-    Test the amenity model class
-    """
+    """Test the amenity model class."""
 
     def setUp(self):
         self.model = Amenity()
