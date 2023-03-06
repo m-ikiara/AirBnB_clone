@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import unittest
 from datetime import datetime
 from models import *
@@ -39,4 +37,3 @@ class Test_PlaceModel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
->>>>>>> 6b98eb05bbbc2faae93304d0ecec7f074ff31581
