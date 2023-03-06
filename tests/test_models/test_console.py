@@ -19,9 +19,7 @@ def captured_output():
 
 
 class Test_Console(unittest.TestCase):
-    """
-    Test the console
-    """
+    """Test the console."""
 
     def setUp(self):
         self.cli = HBNBCommand()
@@ -194,6 +192,7 @@ class Test_Console(unittest.TestCase):
                                "d3da85f2-499c-43cb-b33d-3d7935bc808c name")
         output = out.getvalue().strip()
         self.assertEqual(output, "** value missing **")
+
 
 if __name__ == "__main__":
     unittest.main()
