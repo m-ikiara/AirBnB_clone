@@ -4,9 +4,7 @@ from models import *
 
 
 class Test_BaseModel(unittest.TestCase):
-    """
-    Test the base model class
-    """
+    """Test the base model class."""
 
     def setUp(self):
         self.model1 = BaseModel()
@@ -47,6 +45,7 @@ class Test_BaseModel(unittest.TestCase):
         self.assertEqual(jsonified["created_at"], '2017-02-10 02:06:55.258849')
         self.assertTrue(hasattr(jsonified, "__class__"))
         self.assertEqual(jsonified["__class__"], "BaseModel")
+
 
 if __name__ == "__main__":
     unittest.main()
