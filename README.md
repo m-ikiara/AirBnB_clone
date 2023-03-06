@@ -1,6 +1,6 @@
 # AirBnB Clone
 
-![hbnb](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230306%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230306T054218Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5a40d16061e6b14b03ac2c7f86355823fa0c8688982c62dea0953149dcffb464)
+![Optional Text](hbnb.png)
 
 ## General Idea
 
@@ -53,5 +53,5 @@ Looking forward to this project. Hope it goes well. :grinning:
 
 ## Authors
 
-Rayan Bhaa ([@Rayan-bhaa](https://github.com/Rayan-bhaa))
-Brian M'Ikiara ([@brian-ikiara](https://github.com/brian-ikiara))
+* Rayan Bhaa ([@Rayan-bhaa](https://github.com/Rayan-bhaa))
+* Brian M'Ikiara ([@brian-ikiara](https://github.com/brian-ikiara))
