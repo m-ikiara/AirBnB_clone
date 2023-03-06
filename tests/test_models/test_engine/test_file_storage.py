@@ -1,14 +1,13 @@
+"""Unittests for FileStorage module."""
 import unittest
-import os.path
+import os
 from datetime import datetime
 from models.engine.file_storage import FileStorage
 from models import *
 
 
-class Test_FileStorage(unittest.TestCase):
-    """
-    Test the file storage class
-    """
+class TestFileStorage(unittest.TestCase):
+    """Test FileStorage."""
 
     def setUp(self):
         self.store = FileStorage()
@@ -23,14 +22,15 @@ class Test_FileStorage(unittest.TestCase):
             self.test_len = len(self.store.all())
 
     def tearDown(self):
-        import os
         if os.path.isfile("file.json"):
             os.remove('file.json')
 
     def test_all(self):
+        """Test all modules."""
         self.assertEqual(len(self.store.all()), self.test_len)
 
     def test_new(self):
+        """Test creation."""
         self.assertEqual(len(self.store.all()), self.test_len)
         self.model.save()
         self.assertEqual(len(self.store.all()), self.test_len + 1)
@@ -39,6 +39,7 @@ class Test_FileStorage(unittest.TestCase):
         self.assertEqual(len(self.store.all()), self.test_len + 2)
 
     def test_save(self):
+        """Test storage."""
         self.test_len = len(self.store.all())
         a = BaseModel()
         a.save()
@@ -49,7 +50,9 @@ class Test_FileStorage(unittest.TestCase):
         self.assertEqual(len(self.store.all()), self.test_len + 2)
 
     def test_reload(self):
+        """Test refreshing."""
         pass
+
 
 if __name__ == "__main__":
     unittest.main()
