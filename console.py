@@ -40,13 +40,16 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, args):
         """Create a new Basemodel.
 
+        Example:
+            Usage: create <class_name>
+
         Args:
             args ('obj':'args'): Arguments.
 
         """
         args = args.split()
         if len(args) != 1:
-            print("** clas name missing **")
+            print("** class name missing **")
         else:
             if len(args) > 0 and args[0] in HBNBCommand.valid_classes:
                 new_obj = eval(args[0])()
