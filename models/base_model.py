@@ -30,11 +30,11 @@ class BaseModel:
         return "[{}] ({}) {}".format(type(self)
                                      .__name__, self.id, self.__dict__)
 
-    def to_json(self):
+    def to_dict(self):
         """Serialize objects."""
         dupe = self.__dict__.copy()
         dupe["created_at"] = str(dupe["created_at"])
-        if ("updated_at" in dupe):
+        if "updated_at" in dupe:
             dupe["updated_at"] = str(dupe["updated_at"])
         dupe["__class__"] = type(self).__name__
         return dupe
